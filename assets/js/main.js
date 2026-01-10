@@ -5,6 +5,17 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+ // QUICK AGE CAlCULATION
+
+  const dob = new Date(2005, 3, 12);
+  const today = new Date();
+  let age = today.getFullYear() - dob.getFullYear();
+  if (
+    today.getMonth() < dob.getMonth() ||  (today.getMonth() === dob.getMonth() && today.getDate() < dob.getDate())
+  ){
+    age--;
+  }
+  document.getElementById("AgeNumber").textContent = age;
 
 (function() {
   "use strict";
