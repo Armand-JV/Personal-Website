@@ -81,7 +81,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/Final Portrait.jpg" class="img-fluid" alt="Portrait of Armand">
+            <img src="assets/img/PFP.jpeg" class="img-fluid" alt="Portrait of Armand">
           </div>
           <div class="col-lg-8 content">
             <h2>Web &amp; Software Developer</h2>
@@ -151,7 +151,7 @@
               <h4>Bachelor of Computing &amp; Software Engineering</h4>
               <h5>2024 - 2028(May)</h5>
               <p><em>Belgium Campus, Pretoria</em></p>
-              <p>Currently pursuing a degree in software engineering, with a strong focus on practical development and problem-solving.</p>
+              <p>Currently pursuing a degree in software engineering, with a strong focus on practical development.</p>
             </div>
 
           </div>
@@ -164,7 +164,7 @@
               <ul>
                 <li>Collaborated on the development of a dam monitoring web application aimed at addressing real-world environmental challenges, working alongside international students from UCLL.</li>
                 <li>Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and technical skills.</li>
-                <li>Built and maintained a Minecraft server using Spigot, including custom plugins and configurations.</li>
+                <li>Running Local LLMS with LM Studio and Ollama while integrating them into my projects. For example Image Recognition model for image validation.</li>
                 <li>Manage a personal Ubuntu server used for NAS, DNS-level ad blocking, and game server hosting.</li>
               </ul>
             </div>
@@ -174,18 +174,17 @@
               <ul>
                 <li>Gained experience in programming languages including Java, TypeScript, and C#.</li>
                 <li>Studying key computing concepts such as statistics, algebra, and calculus.</li>
-                <li>Developing strong problem-solving skills through troubleshooting bugs.</li>
+                <li>Developing strong problem-solving skills through troubleshooting and creative solutions.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Hobbies &amp; Interests</h4>
               <ul>
-                <li>Web design and development</li>
-                <li>Linux server management (Debian-based systems)</li>
-                <li>Computer hardware assembly and optimization</li>
-                <li>Playing guitar</li>
-                <li>Fishing</li>
+                <li>Web design and development.</li>
+                <li>Linux server management (Debian-based systems).</li>
+                <li>Computer hardware assembly and optimization.</li>
+                <li>Playing guitar &amp; Fishing.</li>
               </ul>
             </div>
 
@@ -197,6 +196,45 @@
 
     </section>
 
+    <section id="portfolio" class="portfolio section"> 
+        <div class="container section-title" data-aos="fade-up">
+          <span class="description-title">Portfolio</span>
+          <h2>Portfolio</h2>
+          <h3>Dam Monitoring</h3>
+          <p>A public-facing web application enables data collection through photo uploads. Users enter relevant information about each photo, including a description, while the photo's location is captured using a user location tag. They are presented with a map interface where they place a pin to indicate where the photo was taken.</p>
+          <p>The user image gets validated by a local Ollama model that checks is the image contains the relevant object. It runs a comparison check between the discription of the report and the image. Then allows the image to get uploaded to the Azure blob storage.</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-12">
+              <h4 id="TechStack1">Tech Stack Used</h4>
+              <ul>
+                <li>SpringBoot Framework</li>
+                <li>Azure Blob Storage</li>
+                <li>PostgreSQL Database</li>
+                <li>Vite Frontend</li>
+                <li>Ollama Model</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row gy-4 align-items-center">
+            <div class="col-lg-6">
+              <img src="assets/img/Dam Web App Poster .png" id="Dam Poster" class="img-fluid" alt="Dam Web App Poster">
+            </div>
+            <div class="col-lg-6">
+              <iframe 
+                class="img-fluid responsive-iframe"
+                src="https://www.youtube.com/embed/miRuQe2YkbY"
+                title="Dam Web App demo"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+      </div>
+      
+    </section>
   </main>
 
   <footer id="footer" class="footer position-relative dark-background">
